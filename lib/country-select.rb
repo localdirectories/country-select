@@ -20,7 +20,7 @@ module ActionView
           end
           country_options += options_for_select(priority_countries, selected)
           country_options += "<option value=\"\" disabled=\"disabled\">-------------</option>\n"
-          country_options += options_for_select(["Everywhere Else", nil], selected)
+          country_options += options_for_select([["Everywhere Else", nil]], selected)
           country_options += "<option value=\"\" disabled=\"disabled\">-------------</option>\n"
 
           # prevents selected from being included twice in the HTML which causes
